@@ -11,6 +11,10 @@
 		6BED98BB286552E20012E879 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED98BA286552E20012E879 /* ContentView.swift */; };
 		6BED98BD286552E40012E879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BED98BC286552E40012E879 /* Assets.xcassets */; };
 		6BED98C0286552E40012E879 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BED98BF286552E40012E879 /* Preview Assets.xcassets */; };
+		6BED98C9286553290012E879 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED98C8286553290012E879 /* TabBarItem.swift */; };
+		6BED98CB286553A20012E879 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED98CA286553A20012E879 /* HomeView.swift */; };
+		6BED98CD286553C30012E879 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED98CC286553C30012E879 /* TabBarView.swift */; };
+		6BED98D0286562580012E879 /* TabBarItemsPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BED98CF286562580012E879 /* TabBarItemsPreferenceKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		6BED98BA286552E20012E879 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BED98BC286552E40012E879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BED98BF286552E40012E879 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BED98C8286553290012E879 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		6BED98CA286553A20012E879 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		6BED98CC286553C30012E879 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		6BED98CF286562580012E879 /* TabBarItemsPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemsPreferenceKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		6BED98B7286552E20012E879 /* TabBarCustomExample */ = {
 			isa = PBXGroup;
 			children = (
+				6BED98CE286562410012E879 /* Utils */,
+				6BED98C7286553080012E879 /* Views */,
+				6BED98C6286552F10012E879 /* Models */,
 				6BED98B8286552E20012E879 /* TabBarCustomExampleApp.swift */,
 				6BED98BA286552E20012E879 /* ContentView.swift */,
 				6BED98BC286552E40012E879 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				6BED98BF286552E40012E879 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BED98C6286552F10012E879 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BED98C8286553290012E879 /* TabBarItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BED98C7286553080012E879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BED98CA286553A20012E879 /* HomeView.swift */,
+				6BED98CC286553C30012E879 /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BED98CE286562410012E879 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BED98CF286562580012E879 /* TabBarItemsPreferenceKey.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BED98C9286553290012E879 /* TabBarItem.swift in Sources */,
+				6BED98CB286553A20012E879 /* HomeView.swift in Sources */,
 				6BED98BB286552E20012E879 /* ContentView.swift in Sources */,
+				6BED98D0286562580012E879 /* TabBarItemsPreferenceKey.swift in Sources */,
+				6BED98CD286553C30012E879 /* TabBarView.swift in Sources */,
 				6BED98B9286552E20012E879 /* TabBarCustomExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
