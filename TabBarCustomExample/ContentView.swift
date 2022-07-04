@@ -12,23 +12,25 @@ struct ContentView: View {
     @State private var tabSelection: TabBarItem = .inbox
     
     var body: some View {
-        VStack(alignment: .center) {
-            HomeView(selection: $tabSelection) {
-               Text("Inbox")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .tabBarItem(tab: .inbox, selection: $tabSelection)
-                Text("Groups")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .tabBarItem(tab: .groups, selection: $tabSelection)
-                Text("Contacts")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .tabBarItem(tab: .contacts, selection: $tabSelection)
-                Text("Settings")
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                    .tabBarItem(tab: .setting, selection: $tabSelection)
+        NavigationView {
+            VStack(alignment: .center) {
+                HomeView(selection: $tabSelection) {
+                   InboxView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                        .tabBarItem(tab: .inbox, selection: $tabSelection)
+                    GroupsView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                        .tabBarItem(tab: .groups, selection: $tabSelection)
+                    Text("Contacts")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                        .tabBarItem(tab: .contacts, selection: $tabSelection)
+                    Text("Settings")
+                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                        .tabBarItem(tab: .setting, selection: $tabSelection)
+                }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
     }
 }
 
